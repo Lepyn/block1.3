@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__left-part">
+          <button type="button" class="header__button header__burger"></button>
+          <div class="header__left-part-divider"></div>
+          <div class="header__logo"></div>
+        </div>
+        <div class="header__right-part">
+          <button type="button" class="header__button header__call"></button>
+          <button type="button" class="header__button header__chat"></button>
+          <button type="button" class="header__button header__profile"></button>
+          <div class="header__right-part-divider"></div>
+          <button type="button" class="header__button header__repair"></button>
+          <button
+            type="button"
+            class="header__button header__checkstatus"
+          ></button>
+        </div>
+      </header>
+      <div class="shadow"></div>
+      <main class="main">
+        <div class="newHeader">
+        <h1 class="main__title">Услуги и сервисы </h1><div class="label">
+        <label>Оставить заявку</label> <button type="button" class="header__button header__repair2"></button>
+        <label>Статус ремонта</label><button  type="button" class="header__button header__checkstatus2"></button></div></div>
+        <nav class="slideMenu">
+          <ul class="slideMenu__nav">
+           <li class="slideMenu__item slideMenu__item--active">
+              <a href="#" class="nav__link" style="color: #7e7e82">Ремонтируемые устройства</a>
+            </li>
+            <li class="slideMenu__item">
+              <a href="#" class="nav__link" style="color: #7e7e82">Ремонтируемые бренды</a>
+            </li> 
+            <div class="slideMenu__itemAditionally"><li class="slideMenu__item">
+              <a href="#" class="nav__link" style="color: #7e7e82">Дополнительные услуги</a>
+            </li></div>
+            <li  class="slideMenu__item">
+              <a href="#" class="nav__link" style="color: #7e7e82">Цены на услуги</a>
+            </li>
+            <li  class="slideMenu__item">
+              <a href="#" class="nav__link" style="color: #7e7e82">Адреса сервисных центров</a>
+            </li>
+            <li  class="slideMenu__item">
+              <a href="#" class="nav__link" style="color: #7e7e82">Специальные цены</a>
+            </li>
+            <!-- <li  class="slideMenu__item1">
+              <a href="#" class="nav__link" style="color: #7e7e82">Отзывы</a>
+            </li> -->
+          </ul>
+          <button type="button"  class="slideMenu__item1">Отзывы</button>
+        </nav>
+        <div class="main__about">
+          <div class="main__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+
+            <span class="textcontinue"><br><br>
+               Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера 
+            </span>
+            <span class="textcontinue2">
+               , что подтверждает большое количество постоянных клиентов. Мы
+              гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </span> 
+            <div class="readMore">
+              <button type="button" class="button__readmore">Читать далее</button>
+            </div>
+           </div>
+          <img src='img/_MG_3223.svg' alt="logo"> 
+        </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- .main {
+  height: 509px;
+  /* width: 320px; */
+}
+.main__title {
+  font-family: "Bold";
+  position: relative;
+  letter-spacing: -0.6px;
+  height: 30px;
+  /* width: 288px; */
+  left: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.main__title::before {
+  position: absolute;
+
+  left: -16px;
+
+  content: "";
+  background-color: #41f6d7;
+  height: 40px;
+  width: 4px;
+  border: 0px solid #41f6d7;
+  border-radius: 0px 6px 6px 0px;
+}
+
+/* .main__highlight: { */
+/* background-color: #41f6d7; */
+/* height: 40px; */
+/* width: 4px; */
+/* } */
+
+.main__text {
+  font-family: "Regular";
+  color: #1b1c21;
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding: 0px 16px;
+}
+
+.button__readmore {
+  font-size: 16px;
+  margin-left: 48px;
+  border: 0;
+  background-color: #f8f8f8;
+  outline: none;
+}
+
+.slideMenu__scroll {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22px;
+  overflow: scroll;
+  /* width: 300px; */
+  height: 60px;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.slideMenu__button {
+  color: #7e7e82;
+  white-space: nowrap;
+  font-size: 16px;
+  /* flex-wrap: nowrap; */
+  background-color: #f8f8f8;
+  height: 28px;
+  margin-right: 20px;
+  /* width: 220px; */
+  border: 1px solid #b8ffec;
+  outline: none;
+}
+
+.slideMenu__button1 {
+  color: #7e7e82;
+  display: none;
+  background-color: #f8f8f8;
+  padding-top: 20px;
+  border: 0;
+  outline: none;
+}
+.slideMenu__button--active {
+  background-color: white;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding-right: 16px;
+  padding-left: 9px;
+  color: #7e7e82;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main__img {
+  height: 230px;
+  /* width: 320px; */
+  background: url(" img/_MG_3223.svg") no-repeat center;
+} -->
