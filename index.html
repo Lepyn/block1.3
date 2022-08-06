@@ -10,28 +10,25 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__left-part">
-          <button type="button" class="header__button header__burger"></button>
+          <span class="header__background"> <button type="button" class="header__button header__burger"></button></span>
           <div class="header__left-part-divider"></div>
-          <div class="header__logo"></div>
+          <img class="header__logo" src="/webcore/img/Group.svg"></img>
         </div>
         <div class="header__right-part">
-          <button type="button" class="header__button header__call"></button>
-          <button type="button" class="header__button header__chat"></button>
-          <button type="button" class="header__button header__profile"></button>
+          <span class="header__background"><button type="button" class="header__button header__call"></button></span>
+           <span class="header__background"><button type="button" class="header__button header__chat"></button></span>
+           <span class="header__background"> <button type="button" class="header__button header__profile"></button></span>
           <div class="header__right-part-divider"></div>
-          <button type="button" class="header__button header__repair"></button>
-          <button
-            type="button"
-            class="header__button header__checkstatus"
-          ></button>
-        </div>
+           <span class="header__background"> <button type="button" class="header__button header__repair"></button></span>
+           <span class="header__background"><button type="button" class="header__button header__checkstatus"</button></span>        
+           </div>
       </header>
       <div class="shadow"></div>
       <main class="main">
-        <div class="newHeader">
+       <header class="newHeader">
         <h1 class="main__title">Услуги и сервисы </h1><div class="label">
-        <label>Оставить заявку</label> <button type="button" class="header__button header__repair2"></button>
-        <label>Статус ремонта</label><button  type="button" class="header__button header__checkstatus2"></button></div></div>
+        <label>Оставить заявку</label>  <span class="header__background"><button type="button" class="header__button header__repair2"></button></span>
+        <label>Статус ремонта</label> <span class="header__background"><button  type="button" class="header__button header__checkstatus2"></button></span></div></header>
         <nav class="slideMenu">
           <ul class="slideMenu__nav">
            <li class="slideMenu__item slideMenu__item--active">
@@ -40,9 +37,9 @@
             <li class="slideMenu__item">
               <a href="#" class="nav__link" style="color: #7e7e82">Ремонтируемые бренды</a>
             </li> 
-            <div class="slideMenu__itemAditionally"><li class="slideMenu__item">
+            <li class="slideMenu__item">
               <a href="#" class="nav__link" style="color: #7e7e82">Дополнительные услуги</a>
-            </li></div>
+            </li>
             <li  class="slideMenu__item">
               <a href="#" class="nav__link" style="color: #7e7e82">Цены на услуги</a>
             </li>
@@ -58,27 +55,25 @@
           </ul>
           <button type="button"  class="slideMenu__item1">Отзывы</button>
         </nav>
-        <div class="main__about">
+        <article class="main__about">
           <div class="main__text">
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
 
-            <span class="textcontinue"><br><br>
+            <p class="textcontinue"><br><br>
                Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера 
-            </span>
-            <span class="textcontinue2">
+            </p>
+            <p class="textcontinue2">
                , что подтверждает большое количество постоянных клиентов. Мы
               гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
-            </span> 
-            <div class="readMore">
-              <button type="button" class="button__readmore">Читать далее</button>
-            </div>
+            </p> 
+              <button type="button" class="readmore">Читать далее</button>
            </div>
           <img class="main__img" src='img/MG3223J.jpg' alt="logo"> 
-        </div>
+          </article>
         </div>
       </main>
     </div>
