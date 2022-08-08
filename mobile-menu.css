@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Regular";
+  src: url("fonts/TTLakes-Regular.eot");
+  src: url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MediumFont";
+  src: url("fonts/TTLakes-Medium.eot");
+  src: url("fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("fonts/TTLakes-Bold.eot");
+  src: url("fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  max-width: 320px;
+  background-color: white;
+  height: 1024px;
+}
+
+.header {
+  padding-right: 7px;
+  padding-left: 24px;
+  margin-bottom: 50px;
+  padding-top: 18px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images__background {
+  background: #ff3e79;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 17px;
+}
+
+.images__button {
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.images__burger {
+  background: url("/webcore/img/burgerActive.svg") no-repeat center;
+}
+.images__search {
+  background: url("/webcore/img/search.svg") no-repeat center;
+}
+
+.images__call {
+  background: url("/webcore/img/call.svg") no-repeat center;
+}
+
+.images__chat {
+  background: url("/webcore/img/chatT.svg") no-repeat center;
+}
+
+.images__profile {
+  background: url("/webcore/img/profile.svg") no-repeat center;
+}
+
+.images__left-part {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+
+li {
+  font-family: "Regular";
+  margin-bottom: 32px;
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  height: 220px;
+  padding-left: 24px;
+}
+
+.contacts {
+  margin-top: 268px;
+}
+
+.contacts__mail {
+  font-family: "Regular";
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.contacts__phone {
+  font-family: "Bold";
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.laungauge {
+  font-family: "Regular";
+  margin-top: 40px;
+  margin-right: 7px;
+}
