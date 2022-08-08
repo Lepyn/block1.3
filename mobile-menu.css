@@ -93,16 +93,41 @@ body {
   padding-left: 24px;
 }
 
-li {
+.info__item {
+  position: relative;
   font-family: "Regular";
   margin-bottom: 32px;
   margin-left: 0;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.info_view {
+  position: absolute;
+  left: -24px;
+  display: none;
+  top: -9px;
+  height: 42px;
+  width: 4px;
+  border-radius: 0px 9px 9px 0px;
+  background-color: #41f6d7;
+  transition: 0.5s;
 }
 
 ul li:last-child {
+  position: relative;
+  font-family: "Regular";
   margin-bottom: 0;
+}
+
+.info__item:hover .info_view {
+  display: block;
+}
+
+.info__item:hover {
+  color: #7e7e82;
 }
 
 footer {
