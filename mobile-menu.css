@@ -49,11 +49,12 @@ body {
 
 .images__background {
   background: #ff3e79;
-  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   margin-right: 17px;
+
+  z-index: 1;
 }
 
 .images__button {
@@ -62,7 +63,18 @@ body {
   height: 40px;
 }
 
+.images__burger::before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+}
+.images__burger::before:hover {
+  filter: brightness(100%) drop-shadow(5px 6px 4px rgba(0 0 0 0.5));
+  z-index: 2;
+}
 .images__burger {
+  position: relative;
+  z-index: 1;
   background: url("/webcore/img/burgerActive.svg") no-repeat center;
 }
 .images__search {
@@ -113,7 +125,6 @@ body {
   width: 4px;
   border-radius: 0px 9px 9px 0px;
   background-color: #41f6d7;
-  transition: 0.5s;
 }
 
 ul li:last-child {
