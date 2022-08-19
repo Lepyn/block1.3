@@ -64,6 +64,7 @@ body {
   backdrop-filter: blur(50px);
 } */
 .swiper-wrapper {
+  text-align: center;
   padding-top: 16px;
   padding-left: 16px;
 }
@@ -155,6 +156,10 @@ body {
     height: 56px;
   }
 
+  .partner-header__title {
+    padding: 24px;
+  }
+
   .swiper-wrapper {
     display: grid;
     column-gap: 24px;
@@ -162,7 +167,6 @@ body {
     margin: 24px 24px 0px 24px;
     row-gap: 16px;
     overflow: hidden;
-
     grid-template-columns: repeat(3, 223px);
   }
 
@@ -217,6 +221,9 @@ body {
   .swiper-slider {
     padding: 0px;
   }
+  .partner-header__title {
+    padding: 32px;
+  }
   .swiper-wrapper {
     display: grid;
     column-gap: 32px;
@@ -224,6 +231,7 @@ body {
     margin: 24px 32px 0px 32px;
     row-gap: 16px;
     overflow: hidden;
+
     grid-template-columns: repeat(4, 240px);
   }
 
