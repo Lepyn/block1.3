@@ -26,11 +26,9 @@
   font-style: normal;
 }
 
-.wrapper {
-  height: 234px;
-  width: 320px;
+body {
+  margin: 0;
 }
-
 .partner-header {
   height: 80px;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
@@ -46,33 +44,55 @@
 }
 .swiper-container {
   height: 154px;
-  background-color: #f8f8f8;
+  /* margin-left: 16px; */
+}
+
+/* .wrapper::before {
+  position: absolute;
+  left: 305px;
+  bottom: 185px;
+  content: "";
+  height: 81px;
+  width: 24px;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  backdrop-filter: blur(50px);
+} */
+.swiper-wrapper {
+  padding-top: 16px;
+  padding-left: 16px;
 }
 
 .swiper__box {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 72px;
-  width: 240px;
   background-color: white;
-  border: none;
-  margin: 16px;
-  padding-right: 16px;
+  border: 1px solid #eaeaea;
+  /* margin-top: 16px; */
+  border-radius: 6px;
+  margin-bottom: 16px;
 }
 
-.swiper-item__button {
-  display: flex;
-  align-items: flex-end;
+.swiper-box__button {
+  /* display: flex;
+  align-items: flex-end; */
   position: relative;
   border: 2px solid #ff3e79;
   border-radius: 50%;
   background-color: white;
   width: 40px;
   height: 40px;
+  margin-right: 16px;
 }
 
-.swiper-item__button::before {
+.swiper-box__button::before {
   content: "";
   top: 13px;
   left: 11px;
@@ -83,4 +103,157 @@
   padding: 4px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+.swiper-box__image {
+  margin-left: 16px;
+}
+
+.swiper-slider {
+  background-color: #f8f8f8;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+.swiper-pagination {
+  margin-bottom: 48px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7e7e82;
+}
+
+.showBtn {
+  display: none;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .partner-header {
+    height: 56px;
+  }
+
+  .swiper-wrapper {
+    display: grid;
+    column-gap: 24px;
+    padding: 0px;
+    margin: 24px 24px 0px 24px;
+    row-gap: 16px;
+    overflow: hidden;
+
+    grid-template-columns: repeat(3, 223px);
+  }
+
+  .swiper-container {
+    height: 160px;
+  }
+  .swiper-container_active {
+    height: auto;
+  }
+
+  .swiper__box {
+    margin-top: 0px;
+    width: 224px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .showBtn {
+    font-family: "MediumFont";
+    font-size: 16px;
+    display: block;
+    position: relative;
+    /* margin-top: 24px; */
+    border: none;
+    background-color: #f8f8f8;
+    margin-left: 47px;
+    margin-bottom: 34px;
+    margin-top: 24px;
+  }
+
+  .showBtn::before {
+    position: absolute;
+    content: "";
+    left: -17px;
+    top: 6px;
+    width: 8px;
+    height: 10px;
+    background: url("img/arrowIcon.svg");
+  }
+
+  .showBtn-active::before {
+    content: "";
+    transform: rotate(180deg);
+  }
+  .showBtn-margin {
+    margin-bottom: 14px;
+    margin-top: 46px;
+  }
+}
+
+@media (min-width: 769px) {
+  .swiper-slider {
+    padding: 0px;
+  }
+  .swiper-wrapper {
+    display: grid;
+    column-gap: 32px;
+    padding: 0px;
+    margin: 24px 32px 0px 32px;
+    row-gap: 16px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 240px);
+  }
+
+  .swiper-container {
+    height: 160px;
+  }
+  .swiper-container_active {
+    height: auto;
+  }
+  .swiper__box {
+    margin-top: 0px;
+    width: 240px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .showBtn {
+    font-family: "MediumFont";
+    font-size: 16px;
+    display: block;
+    position: relative;
+    /* margin-top: 24px; */
+    border: none;
+    background-color: #f8f8f8;
+    margin-left: 63px;
+    margin-bottom: 34px;
+    margin-top: 24px;
+  }
+
+  .showBtn::before {
+    position: absolute;
+    content: "";
+    left: -22px;
+    top: 6px;
+    width: 8px;
+    height: 10px;
+    background: url("img/arrowIcon.svg");
+  }
+
+  .showBtn-active::before {
+    content: "";
+
+    transform: rotate(180deg);
+  }
+
+  .showBtn-margin {
+    margin-bottom: 14px;
+    margin-top: 46px;
+  }
 }
