@@ -23,9 +23,10 @@ const myswiper = function () {
       width: 240,
       slidesPerView: 1,
     });
-  } else {
-    swiper.destroy();
-  }
+   }
+  //   else {
+  //    swiper.destroy();
+  //  }
 };
 window.addEventListener("resize", () => {
   myswiper();

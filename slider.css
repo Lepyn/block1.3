@@ -92,6 +92,18 @@ body {
   margin-right: 16px;
 }
 
+.swiper-box__button:hover {
+  background-image: -webkit-linear-gradient(
+    0,
+    #000 0%,
+    rgba(255, 0, 77, 0.13) 0%
+  );
+  background-image: -moz-linear-gradient(0, #000 0%, rgba(255, 0, 77, 0.13) 0%);
+  background-image: -o-linear-gradient(0, #000 0%, rgba(255, 0, 77, 0.13) 0%);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .swiper-box__button::before {
   content: "";
   top: 13px;
@@ -131,6 +143,11 @@ body {
 
 .showBtn {
   display: none;
+}
+
+.showBtn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
